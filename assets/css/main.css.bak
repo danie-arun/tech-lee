@@ -197,7 +197,7 @@ h6, .body__overlay {
   --rs-white: #FFFFFF;
   --rs-black: #1F1F1F;
   --rs-light: #eee;
-  --rs-theme-orange: #ca0f00;
+  --rs-theme-orange: #EA5501;
   --rs-theme-red: #E30613;
   --rs-theme-blue: #005EB8;
   --rs-theme-light-blue: #0D80CE;
@@ -5844,21 +5844,9 @@ html.lenis body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-}
-
-.rs-header-three .rs-header-logo-wrapper img.img-padding {
-  padding: 0px 58px;
-  box-sizing: border-box;
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
 }
 .rs-header-three .rs-header-logo-wrapper::before {
-  background-color: #303030;
+  background-color: var(--rs-theme-orange);
   clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
   width: 360px;
   height: 135px;
@@ -5922,11 +5910,6 @@ html.lenis body {
 }
 .rs-header-three .rs-sticky .rs-header-logo-wrapper {
   height: 100px;
-  justify-content: flex-start;
-}
-.rs-header-three .rs-sticky .rs-header-logo-wrapper img.img-padding {
-  padding: 0px 45px 0px 0px;
-  max-height: 100%;
 }
 .rs-header-three .rs-sticky .rs-header-logo-wrapper::before {
   height: 100px;
@@ -6514,7 +6497,9 @@ html.lenis body {
 /*----------------------------------------*/
 /*  3.5.4 Header Common Style 
 /*----------------------------------------*/
-
+.rs-header-logo img {
+  max-width: 180px;
+}
 .rs-header-search-wrapper {
   position: relative;
 }
@@ -20625,7 +20610,7 @@ html.lenis body {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.76);
   z-index: 9;
-  border: 3px solid #ca0f00;
+  border: 3px solid #EA5501;
 }
 .rs-contact-nine .rs-contact-wrapper {
   display: grid;
